@@ -30,6 +30,6 @@ if __name__ == '__main__':
         rows = csv.reader(f, delimiter=",")
         contacts_list = list(rows)
 
-with open("phonebook.csv", "w", encoding="UTF-8") as f:
-    datawriter = csv.writer(f, delimiter=',')
-    datawriter.writerows(create_new_list(contacts_list))
+    with open("phonebook.csv", "w", encoding="UTF-8") as f:
+        datawriter = csv.writer(f, delimiter=',')
+        datawriter.writerows(create_new_list(contacts_list))
